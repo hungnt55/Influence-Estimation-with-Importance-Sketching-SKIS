@@ -3,14 +3,13 @@ Information:
 --------------------------------------------------------
 Version 1.0: Implementation of influence estimation algorithm based on the importance sketching SKIS under the Independent Cascade(IC) model. For more details about SKIS and the algorithms, please refer to our paper:
 
-	H. T. Nguyen, T. P. Nguyen, NhatHai Phan, T. N. Dinh, Importance Sketching of Influence Dynamics in Billion-scale Networks, IEEE International Conference on Data Mining series (ICDM), 2017
+[H. T. Nguyen, T. P. Nguyen, NhatHai Phan, T. N. Dinh, Importance Sketching of Influence Dynamics in Billion-scale Networks, IEEE International Conference on Data Mining series (ICDM), 2017](https://arxiv.org/abs/1709.03565)
+
 
 
 Terms of use:
 --------------------------------------------------------
-The software is released under a dual licence.
-
-To give everyone maximum freedom to make use of our algorithm and derivative works, we make the code open source under the GNU Affero General Public License version 3 or any later version (see LICENSE_AGPLv3.txt.) We are not responsible for any demage caused during the use of our code.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
 
 Requirements:
