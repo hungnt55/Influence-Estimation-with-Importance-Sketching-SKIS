@@ -40,16 +40,16 @@ This package offers a set of functions to use in order to estimate the influence
     Options:
 
        -i <binary graph file>
-            specify the path to the binary graph file (default: network.bin)
+		specify the path to the binary graph file (default: network.bin)
 
        -l <seed file path>
-            path to the file containing the seed sets. Each seed node is listed in a line and between two seed sets, there is a blank line to separate them
+		path to the file containing the seed sets. Each seed node is listed in a line and between two seed sets, there is a blank line to separate them
 
        -h <h parameter>
-            determine the number of samples, i.e. h*n*log(n). Refer to our paper for more details
+		determine the number of samples, i.e. h*n*log(n). Refer to our paper for more details
 
        -m <model>
-	    diffusion model (currently only IC is supported)
+		diffusion model (currently only IC is supported)
 
 
 
