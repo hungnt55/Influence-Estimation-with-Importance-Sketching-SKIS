@@ -19,7 +19,7 @@ In order to compile all the tools, it requires GCC 4.7.2 and later.
 
 Compile:
 --------------------------------------------------------
-Type `make' command to compile everything
+Type make command to compile everything
 
 
 How to use:
@@ -27,32 +27,36 @@ How to use:
 This package offers a set of functions to use in order to estimate the influences of multiple seed sets contained in a file. A typical sequence of actions is as follows:
 
 1. Conversion from a text format to binary file for fast graph reading
-	./el2bin <input file> <output file>
 
-    <input file>: the path to text file in edge list format: the first line contains the number of nodes n and number of edges m, each of the next m lines describes an edge following the format: <src> <dest> <weight>. Node index starts from 1.
-    <output file>: the path to binary output file
+       ./el2bin <input file> <output file>
+
+       <input file>: the path to text file in edge list format: the first line contains the number of nodes n and number of edges m, each of the next m lines describes an edge following the format: <src> <dest> <weight>. Node index starts from 1.
+       <output file>: the path to binary output file
 
 2. Run the algorithm to estimate the ifnluences of seed sets
-	./skinfest [Options]
+	
+       ./skinfest [Options]
 
     Options:
 
-        -i <binary graph file>
+       -i <binary graph file>
             specify the path to the binary graph file (default: network.bin)
 
-        -l <seed file path>
+       -l <seed file path>
             path to the file containing the seed sets. Each seed node is listed in a line and between two seed sets, there is a blank line to separate them
 
-	-h <h parameter>
+       -h <h parameter>
             determine the number of samples, i.e. h*n*log(n). Refer to our paper for more details
 
-	-m <model>
+       -m <model>
 	    diffusion model (currently only IC is supported)
 
 
 
      Output format:
-	The outputs are printed on standard output stream in the following order
+     
+       The outputs are printed on standard output stream in the following order
+       
 		Indexing time: <time>
 		Index Memory: <index mem>
 		Total Memory: <total mem>
@@ -67,6 +71,7 @@ This package offers a set of functions to use in order to estimate the influence
 Example:
 --------------------------------------------------------
 Estimate influences of two seed sets in DBLP networks. The seed set file (dblp.seeds) contains:
+
 		1
 		2
 		3
@@ -76,12 +81,14 @@ Estimate influences of two seed sets in DBLP networks. The seed set file (dblp.s
 		6
 		7
 		8
+		
+1. Convert to binary file:
 
-	1. Convert to binary file:
-		./el2bin dblp_format.txt dblp.bin
+    	./el2bin dblp_format.txt dblp.bin
 	
-	2. Run our algorithm with h=5:
-		./skinfest -i dblp.bin -l dblp.seeds -h 5 -m IC
+2. Run our algorithm with h=5:
+            
+       ./skinfest -i dblp.bin -l dblp.seeds -h 5 -m IC
 
 	The output:
 
