@@ -1,7 +1,8 @@
 # Influence-Estimation-with-Importance-Sketching-SKIS
 Information:
 --------------------------------------------------------
-Version 1.0: Implementation of influence estimation algorithm based on the importance sketching SKIS under the Independent Cascade(IC) model. For more details about SKIS and the algorithms, please refer to our paper: 
+Version 1.0: Implementation of influence estimation algorithm based on the importance sketching SKIS under the Independent Cascade(IC) model. For more details about SKIS and the algorithms, please refer to our paper:
+
 	H. T. Nguyen, T. P. Nguyen, NhatHai Phan, T. N. Dinh, Importance Sketching of Influence Dynamics in Billion-scale Networks, IEEE International Conference on Data Mining series (ICDM), 2017
 
 
